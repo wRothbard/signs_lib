@@ -1,6 +1,6 @@
 -- Definitions for standard minetest_game wooden and steel wall signs
 
-signs_lib.register_sign("default:sign_wall_wood", {
+signs_lib.register_sign("signs:sign_wall_wood", {
 	description = "Wooden wall sign",
 	inventory_image = "signs_lib_sign_wall_wooden_inv.png",
 	tiles = {
@@ -17,7 +17,7 @@ signs_lib.register_sign("default:sign_wall_wood", {
 	allow_yard = true
 })
 
-signs_lib.register_sign("default:sign_wall_steel", {
+signs_lib.register_sign("signs:sign_wall_steel", {
 	description = "Steel wall sign",
 	inventory_image = "signs_lib_sign_wall_steel_inv.png",
 	tiles = {
@@ -25,7 +25,7 @@ signs_lib.register_sign("default:sign_wall_steel", {
 		"signs_lib_sign_wall_steel_edges.png",
 		nil, -- not set, so it'll use the standard pole mount texture
 		nil, -- not set, so it'll use the standard hanging chains texture
-		"default_steel_block.png" -- for the yard sign's stick
+		"steel_block.png" -- for the yard sign's stick
 	},
 	groups = signs_lib.standard_steel_groups,
 	sounds = signs_lib.standard_steel_sign_sounds,
